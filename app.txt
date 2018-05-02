@@ -1,0 +1,35 @@
+var title = ['Orange', 'Apple', 'Mango', 'Airplane', 'Kiwi'];
+
+var i = 0;  // the index of the current item to show
+
+setInterval(function() {            // setInterval makes it run repeatedly
+    document.getElementById('fruit')
+.innerHTML = title[i++];    // get the item and increment
+    if (i == title.length) i = 0;   // reset to first element if you've reached the end
+}, 1000);  
+
+
+var counter = 0;
+var words = ['jaja', 'jojo', 'lol', 'troll', 'pk!'];
+var my_div = document.getElementById('my_id');
+                                     
+function next_word()
+{
+    my_div.innerHTML = words[counter % words.length];
+    counter += 1;
+}
+
+setInterval(next_word, 100);
+
+
+
+
+// let newHeadingLi = document.createElement('li');
+// newHeadingLi.appendChild(document.createTextNode(newArray.toString()));
+// let newHeading = document.querySelector('div.projects').appendChild(newHeadingLi);
+// let oldHeading = document.querySelector('.projects').childNodes[1]
+// let parent = document.querySelector('.projects');
+// let parentReplace = parent.replaceChild(newHeading, oldHeading);
+
+// const buttonCheck = document.querySelector('button');
+// buttonCheck.addEventListener('click', setProjects);

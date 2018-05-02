@@ -1,0 +1,41 @@
+/*                     
+color: #FFFFF
+color :f5ab35; */
+
+body {
+    background-image: url("img/image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background {
+    background: rgba(64, 64, 64, 0.3);
+    margin-top: 300px;
+    width: 900px;
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+    align-items: center;
+}
+
+p,
+li {
+    font-size: 25px;
+    color: white;
+    font-style: normal;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    margin: 10px auto;
+}
+
+section {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    font-size: 32px;
+}
